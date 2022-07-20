@@ -66,6 +66,27 @@ li{
 	font-size: 20px;
 }
 
+/*carousel thing*/
+.carousel-inner{
+	background-color: beige;
+	max-width: 100vw;
+	height: 80vh;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+}
+.carousel-item{
+right: 25%;
+}
+
+.carousel-item > img{
+	width: 50vw;
+}
+
+
+/*End carousel thing*/
+
 /*Premium Materials Fast shipping quality assurance*/
 .detai{
 	flex-flow: column wrap;
@@ -140,26 +161,7 @@ This one spaces and lines up the outer boxes*/
 	display: flex;	
 	justify-content: center;
 	}
-/*carousel thing*/
-.carousel-inner{
-	background-color: beige;
-	max-width: 100vw;
-	height: 80vh;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-content: center;
-}
-.carousel-item{
-left: -460px;
-}
 
-.carousel-item > img{
-	width: 50vw;
-}
-
-
-/*End carousel thing*/
 .footer{
 	width: 70%;
 	min-height: 80px;
@@ -182,23 +184,48 @@ left: -460px;
 .foot-copy{
 	margin-top: -30px;
 }
-.foot-top{
 
-}
-@media (max-width: 576px){
+@media (max-width: 982px){
 	.email{
 		width: 200px;
 	}
-	.slide{
-		width: 40vw;
-		left: 200px;
-	}
-
-	.carousel-item > img{
+	.slide, .carousel-inner{
 		width: 100vw;
-		padding-left: 1200px;
-		position: absolute;
+	}
+	.carousel-item{
+		right: 50%;
+	}
+	.carousel-item > img{
+		width: 100%;
+	}
+	.products{
+		height: 225vh;
+	}
+	.product{
+		display: flex;
+		width: 50vw;
+		flex-flow: column;
+		align-items: center;
+	}
+	.product > h3{
+		width: 100%;
+	}
+	.placehold{
+		width: 25%;
+	}
+	.footer{
+		justify-items: flex-start;
+	}
+	.footer-content{
+		justify-items:left;
+	}
+	.foot-copy{
+		width: 100%;
+		font-size: 10px;
 	}
 } 
 
 
+/* local repo commit name: first
+github repo commit name: product-first
+git push-u product-first 'first'*/
